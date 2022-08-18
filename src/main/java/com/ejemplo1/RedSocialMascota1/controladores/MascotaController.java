@@ -105,7 +105,7 @@ public class MascotaController {
     }
     
     @GetMapping("/eleccion")
-    public String eleccion(HttpSession session, ModelMap model) {
+    public String eleccion(HttpSession session, ModelMap model,@RequestParam(required = false) String id) {
         Usuario login = (Usuario) session.getAttribute("usuariosession");
         if (login == null) {
             return "redirect:/login";

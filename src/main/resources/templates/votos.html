@@ -70,7 +70,7 @@
                                                                             <h3 th:text="${mascota.nombre}" class="card-title" style="color: black"></h3>
                                                                             <p th:text="${mascota.tipo}"class="card-text"style="color: black"></p>
                                                                             <p th:text="${mascota.sexo}" class="card-text"style="color: black"></p>
-                                                                            <a href="@{/votos/crear-voto(id=__${session.usuariosession.id}__,id2=__${mascota.id}__)" class="btn btn-primary">Voto</a>
+                                                                            <a href="@{votos/crear-voto(idMascota1=__${mascota.id}__,idMascota2=__${mascota.id}__)" class="btn btn-primary">Voto</a>
                                                                         </div>
                                                                         </div>
                                                                         </td>
